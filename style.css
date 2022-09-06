@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#astro{
+    position: absolute;
+    animation: movimientoastro;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+#astro img{
+ width: 200px;
+ height: 230px;
+ z-index: 1;
+ 
+}
+@keyframes movimientoastro{
+      0%{
+      transform: translate(-200px,100px);
+      }
+      100%{
+        transform: translate(1600px,-100px);
+      }
+
+}
+
+section{
+    width: auto;
+    height: 130vh;
+    margin: 0;
+    padding: 5px;
+    background-image: url("back.jpg");
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+    margin: 30px;
+    margin-top: 0px;
+    font-size: 80px;
+    color: rgb(201, 201, 201);
+    transition: 2s;
+}
+h1:hover{
+    font-size: 100px;
+}
+#formu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#formu select{
+    border-radius: 30px;
+    width: 200px;
+    height: 30px;
+    border-color: transparent;
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.253);
+    color: whitesmoke;
+}
+#formu select option{
+    color: black;
+}
+#formu input{
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    border-color: transparent;
+    margin: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.253);
+    color: whitesmoke;
+}
+#formu button{
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    border-color: transparent;
+    margin: 10px;
+     background-color: rgba(0, 0, 0, 0.253);
+    color: whitesmoke;
+}
+p{
+    margin: 30px;
+    color: rgb(201, 201, 201);
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    margin: 0;
+}
+
+a{
+    color: whitesmoke;
+    margin: 0;
+    text-decoration: none;
+}
+
+@media (min-width:800px){
+    section{
+        height: 90vh;
+    }
+   
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
